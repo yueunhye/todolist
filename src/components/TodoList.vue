@@ -1,5 +1,4 @@
 <template>
-  <!-- :title="todo.title" -->
   <ul>
     <TodoItem
       v-for="todo in todos"
@@ -46,7 +45,7 @@ export default {
 <style lang="scss" scoped>
 ul {
   margin-top: 50px;
-  // background-color: gray;
+
   width: 100%;
 
 }

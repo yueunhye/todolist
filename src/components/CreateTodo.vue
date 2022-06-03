@@ -1,5 +1,4 @@
 <template>
-  <!-- this생략가능 메소드를 template쪽으로 $ -->
   <section>
     <input 
       placeholder="'할일을 입력해주세요' '할일을 입력해주세요' '할일을 입력해주세요' '할일을 입력해주세요'"
@@ -11,7 +10,6 @@
       @click="createTodo()">
       CREATE
     </button>
-    <!-- <h1>{{ title }}</h1> -->
   </section>
 </template>
 
@@ -47,7 +45,7 @@ export default {
 
 <style lang="scss" scoped>
   section {
-    // background-color: red;
+
     text-align: center;
     width: 70%;
     margin: auto;

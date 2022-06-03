@@ -145,8 +145,7 @@ li {
   
   font-weight: 500;
   font-size: 20px;
-  // background-color: lawngreen;
-  // border: 1px solid black;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -156,8 +155,7 @@ li {
   }
   .write {
     display: flex;
-    // background-color: teal;
-    // width: 50%;
+
     input {
       // margin: auto;
       text-align: center;
@@ -175,9 +173,7 @@ li {
     
     display: flex;
     height: 30px;
-    // width: 50spx;
-    // border-radius: 15px;
-    
+
     cursor: pointer;
     button {
       font-weight: 900;

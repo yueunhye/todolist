@@ -24,7 +24,6 @@ export default {
     width: 1200px;
     position:relative;
     margin:0 auto;
-    // background-color: lightblue;
     height: 700px;
     
     h1 {
