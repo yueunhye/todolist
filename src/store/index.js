@@ -40,9 +40,7 @@ export default createStore({
         method: 'GET',
         headers
       })
-      // console.log(res)
-      // console.log(res.data)
-      // console.log(res.data[0].id)
+
       commit('setTodos', res.data)
     },
 
@@ -64,17 +62,15 @@ export default createStore({
         }
       })
       commit('addTodo', res.data)
-      console.log('addTodo', res.data)
     },
 
     //DELETE
     async deleteTodo(context, id) {
-      const res = await axios({
+      await axios({
         url: `${END_POINT}/${id}`,
         method: 'DELETE',
         headers,
       })
-      console.log('deleteTodo', res)
     },
 
     //PUT
@@ -83,7 +79,7 @@ export default createStore({
         id,
         title,
         order,
-        done
+        done,
       } = payload
       await axios({
         url: `${END_POINT}/${id}`,
@@ -92,10 +88,9 @@ export default createStore({
         data: {
           title,
           order,
-          done
+          done,
         }
       })
     }
-
   }
 })

@@ -27,10 +27,9 @@ export default {
     height: 700px;
     
     h1 {
-      
       text-align: center;
       color: rgb(69, 42, 174);
-      -webkit-text-stroke: 1px #2EE59D;
+      -webkit-text-stroke: 1px #6478fb;
     }
   }
 </style>

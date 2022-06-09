@@ -1,13 +1,11 @@
 <template>
   <section>
     <input 
-      placeholder="'할일을 입력해주세요' '할일을 입력해주세요' '할일을 입력해주세요' '할일을 입력해주세요'"
+      placeholder=" 할일을 적어주세요 "
       :value="title" 
       @input="title = $event.target.value"
       @keyup.enter="createTodo()" />    
-    <button
-      
-      @click="createTodo()">
+    <button @click="createTodo()">
       CREATE
     </button>
   </section>
@@ -31,12 +29,12 @@ export default {
       this.$store.dispatch('createTodo', {
         title: this.title,
         order: ++this.order
-        // order: this.order
         })
-      console.log('order',this.order, typeof this.order)
-      this.title = ''
+      this.clearInput()
     },
-  
+    clearInput() {
+      this.title = ''
+    }
 
   }
 }
@@ -52,13 +50,20 @@ export default {
     input {
       width: 500px;
       height: 50px;
+      line-height: 50px;
+      text-align: center;
+      outline: none;
+      border-radius: 5px;
+      
     }
     button {
-      border-radius: 15px;
+      color: #fff;
+      border-radius: 12px;
       margin-left: 10px;
       height: 50px;
       width: 100px;
       cursor: pointer;
+      background: #370dc2;
     }
   }
 </style>
